@@ -5,53 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ficha do Usuário</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>Preencha suas informações</h1>
+    <h1>Criação de Ficha</h1>
     <form id="questionForm">
-      <label>1. Qual seu sexo?</label>
-      <select name="sexo" required>
-        <option value="" disabled selected>Selecione</option>
-        <option value="Masculino">Masculino</option>
-        <option value="Feminino">Feminino</option>
-        <option value="Outro">Outro</option>
-      </select>
+      <div class="form-group">
+        <label for="sexo">1. Qual seu sexo?</label>
+        <select name="sexo" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
 
-      <label>2. Qual a cor da sua pele?</label>
-      <select name="pele" required>
-        <option value="" disabled selected>Selecione</option>
-        <option value="Branca">Branca</option>
-        <option value="Preta">Preta</option>
-        <option value="Parda">Parda</option>
-        <option value="Amarela">Amarela</option>
-        <option value="Indígena">Indígena</option>
-      </select>
+      <div class="form-group">
+        <label for="pele">2. Qual a cor da sua pele?</label>
+        <select name="pele" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="Branca">Branca</option>
+          <option value="Preta">Preta</option>
+          <option value="Parda">Parda</option>
+          <option value="Amarela">Amarela</option>
+          <option value="Indígena">Indígena</option>
+        </select>
+      </div>
 
-      <label>3. Quantos idiomas você fala?</label>
-      <input type="number" name="idiomas" min="1" max="20" required />
+      <div class="form-group">
+        <label for="idiomas">3. Quantos idiomas você fala?</label>
+        <input type="number" name="idiomas" min="1" max="20" required />
+      </div>
 
-      <label>4. Qual seu tipo sanguíneo?</label>
-      <select name="sangue" required>
-        <option value="" disabled selected>Selecione</option>
-        <option value="A+">A+</option>
-        <option value="A-">A-</option>
-        <option value="B+">B+</option>
-        <option value="B-">B-</option>
-        <option value="AB+">AB+</option>
-        <option value="AB-">AB-</option>
-        <option value="O+">O+</option>
-        <option value="O-">O-</option>
-      </select>
+      <div class="form-group">
+        <label for="sangue">4. Qual seu tipo sanguíneo?</label>
+        <select name="sangue" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
 
-      <label>5. Está trabalhando?</label>
-      <select name="trabalhando" required>
-        <option value="" disabled selected>Selecione</option>
-        <option value="Sim">Sim</option>
-        <option value="Não">Não</option>
-      </select>
+      <div class="form-group">
+        <label for="trabalhando">5. Está trabalhando?</label>
+        <select name="trabalhando" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Gerar Ficha</button>
     </form>
 
     <div id="ficha" class="ficha" style="display:none;"></div>
@@ -60,3 +71,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
