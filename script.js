@@ -10,11 +10,8 @@ document.getElementById("questionForm").addEventListener("submit", function (e) 
 
   const fichaHTML = `
     <h2>Ficha do Usuário</h2>
-    <p><strong>Sexo:</strong> ${sexo}</p>
-    <p><strong>Cor da pele:</strong> ${pele}</p>
-    <p><strong>Idiomas falados:</strong> ${idiomas}</p>
-    <p><strong>Tipo sanguíneo:</strong> ${sangue}</p>
-    <p><strong>Está trabalhando:</strong> ${trabalhando}</p>
+    <p>Seu sexo é <strong>${sexo}</strong>, seu tipo sanguineo é <strong>${sangue}</strong> e você <strong>${trabalhando}</strong> está trabalhando.</p>
+    <p>Além disso você é uma pessoa <strong>${pele}</strong> que fala <strong>${idiomas}</strong> idiomas.</p>
   `;
 
   const fichaDiv = document.getElementById("ficha");
